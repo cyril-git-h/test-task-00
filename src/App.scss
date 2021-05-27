@@ -1,3 +1,131 @@
-.App {
-  text-align: center;
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__auth {
+    flex: 1 1 0;
+    text-align: center;
+    &-title {
+      color: red;
+    }
+    &-button {
+      background-color: #ccc;
+      padding: 10px 45px;
+    }
+  }
+  &__slider {
+    flex: 1 1 0;
+  }
+}
+
+.logo {
+  padding: 10px 45px;
+  a {
+    display: flex;
+  }
+}
+
+.menu__inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__link {
+  display: block;
+  &:hover {
+    background-color: #fff;
+  }
+  padding: 22px 45px;
+}
+
+.cards {
+  background-color: #efefef;
+  padding: 30px 0;
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  display: flex;
+  background-color: #ccc;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10%;
+  &:first-child {
+    margin-left: 45px;
+  }
+  &:last-child {
+    margin-right: 45px;
+  }
+  &__photo {
+    margin-right: 10px;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+  &__text {
+    width: 150px;
+  }
+  &__title {
+    font-size: 14px;
+  }
+  &__description {
+    white-space: pre-line;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px; /* fallback */
+    max-height: 48px; /* fallback */
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
+
+//override slider properties
+.image-gallery {
+  margin: 20px 45px 0 0;
+}
+.image-gallery-slide .image-gallery-description {
+  bottom: 35px !important;
+  right: 0 !important;
+  left: auto !important;
 }
