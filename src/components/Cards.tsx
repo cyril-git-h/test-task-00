@@ -20,7 +20,7 @@ function Cards() {
   let [loader, setLoader] = useState<boolean>(true)
   const getPosts = useCallback(() => {
     const instance = axios.create({
-      baseURL: 'http://jsonplaceholder.typicode.com/',
+      baseURL: 'https://jsonplaceholder.typicode.com/',
     })
     let instance1 = instance.get('/photos', {
       params: {
